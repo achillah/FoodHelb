@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "506636478340",
+    "project_id": "foodhelb",
+    "storage_bucket": "foodhelb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506636478340:android:2d9d0299dba35d494f9fd1",
+        "android_client_info": {
+          "package_name": "com.helb.foodhelb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506636478340-dbkad4ttkcmt458t29c6djrp6d6s5lrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbRZGDzBt1j2JTWRR-enfxnjgHRHWkot4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506636478340-dbkad4ttkcmt458t29c6djrp6d6s5lrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
