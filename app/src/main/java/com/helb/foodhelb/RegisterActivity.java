@@ -137,8 +137,8 @@ public class RegisterActivity extends AppCompatActivity {
                 }else if (TextUtils.isEmpty(mobile))
                 {
                     Toast.makeText(RegisterActivity.this, "Please enter your dob", Toast.LENGTH_SHORT).show();
-                    editTextRegisterDoB.setError("DoB is Required");
-                    editTextRegisterDoB.requestFocus();
+                    editTextRegisterMobile.setError("Mobile is Required");
+                    editTextRegisterMobile.requestFocus();
                 }else if (mobile.length() != 10)
                 {
                     Toast.makeText(RegisterActivity.this, "Please re-enter your mobile", Toast.LENGTH_SHORT).show();

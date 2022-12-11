@@ -106,8 +106,6 @@ public class UserProfileActivity extends AppCompatActivity {
     }
 
     //Create ActionBar Menu
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Inflate menu item
@@ -127,7 +125,7 @@ public class UserProfileActivity extends AppCompatActivity {
             startActivity(getIntent());
             finish();
             overridePendingTransition(0, 0);
-        } /*else if(id == R.id.menu_update_profile){
+        } else if(id == R.id.menu_update_profile){
             Intent intent = new Intent(UserProfileActivity.this, UpdateProfileActivity.class);
             startActivity(intent);
         }else if(id == R.id.menu_update_email){
@@ -139,7 +137,8 @@ public class UserProfileActivity extends AppCompatActivity {
         }else if(id == R.id.menu_change_password){
             Intent intent = new Intent(UserProfileActivity.this, ChangePasswordActivity.class);
             startActivity(intent);
-        }else if(id == R.id.menu_delete_profile){
+            finish();
+        }/*else if(id == R.id.menu_delete_profile){
             Intent intent = new Intent(UserProfileActivity.this, DeleteProfileActivity.class);
             startActivity(intent);
         } */else if(id == R.id.menu_logout){
