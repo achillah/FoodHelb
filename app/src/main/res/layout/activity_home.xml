@@ -331,6 +331,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/weatherBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -341,13 +342,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/bottom_btn4" />
+                        android:src="@drawable/ic_cloud" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Settings"
+                        android:text="Weather"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />

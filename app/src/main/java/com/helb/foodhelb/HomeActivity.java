@@ -35,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
         LinearLayout cartBtn=findViewById(R.id.cartBtn);
         LinearLayout mapBtn=findViewById(R.id.mapBtn);
+        LinearLayout weatherBtn=findViewById(R.id.weatherBtn);
 
         LinearLayout profileBtn=findViewById(R.id.profileBtn);
 
@@ -67,7 +68,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        weatherBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, WeatherActivity.class));
+            }
+        });
+
     }
+
+
 
     private void recyclerViewPopular() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
