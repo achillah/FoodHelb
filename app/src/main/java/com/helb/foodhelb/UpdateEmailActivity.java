@@ -209,10 +209,10 @@ public class UpdateEmailActivity extends AppCompatActivity {
             Intent intent = new Intent(UpdateEmailActivity.this, ChangePasswordActivity.class);
             startActivity(intent);
             finish();
-        }/*else if(id == R.id.menu_delete_profile){
-            Intent intent = new Intent(UserProfileActivity.this, DeleteProfileActivity.class);
+        }else if(id == R.id.menu_delete_profile){
+            Intent intent = new Intent(UpdateEmailActivity.this, DeleteProfileActivity.class);
             startActivity(intent);
-        } */else if(id == R.id.menu_logout){
+        } else if(id == R.id.menu_logout){
             auth.signOut();
             Toast.makeText(UpdateEmailActivity.this, "Logged Out", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(UpdateEmailActivity.this, MainActivity.class);
