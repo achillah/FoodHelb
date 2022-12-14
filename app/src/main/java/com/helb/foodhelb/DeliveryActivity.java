@@ -2,6 +2,7 @@ package com.helb.foodhelb;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +16,8 @@ public class DeliveryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delivery);
+   /*     ImageView img= (ImageView) findViewById(R.id.imageView12);
+        img.setImageResource(R.drawable.delivery22);*/
 
         timer = new Timer();
         timer.schedule(new TimerTask() {
