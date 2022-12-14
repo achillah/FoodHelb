@@ -1,10 +1,17 @@
 package com.helb.foodhelb;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.SharedMemory;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
@@ -18,6 +25,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Locale;
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editTextLoginEmail, editTextLoginPwd;
@@ -29,6 +38,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //change actionbar title
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getResources().getString(R.string.app_name));
 
         getSupportActionBar().setTitle("Login");
 
@@ -70,7 +83,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+
     }
+
 
     private void loginUser(String email, String pwd) {
 

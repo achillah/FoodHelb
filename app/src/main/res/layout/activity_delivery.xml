@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="536dp"
-        android:text="Votre commande à bien été envoyé et elle sera traitée dans les plus brefs délais. "
+        android:text="@string/deliveryText"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="18sp"

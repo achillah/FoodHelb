@@ -249,7 +249,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
-                            android:text="Total Price"
+                            android:text="@string/totalPrice"
                             android:textColor="#373b54"
                             android:textSize="15sp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -280,7 +280,7 @@
                         android:elevation="3dp"
                         android:gravity="center"
                         android:padding="8dp"
-                        android:text="Add to Cart"
+                        android:text="@string/addToCard"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
                         android:textStyle="bold" />

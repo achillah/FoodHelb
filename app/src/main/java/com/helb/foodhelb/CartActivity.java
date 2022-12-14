@@ -45,6 +45,9 @@ public class CartActivity extends AppCompatActivity {
         LinearLayout homeBtn=findViewById(R.id.homeBtn);
         LinearLayout cartBtn=findViewById(R.id.cartBtn);
         LinearLayout mapBtn=findViewById(R.id.mapBtn);
+        LinearLayout profilBtn=findViewById(R.id.profileBtn);
+        LinearLayout weatherBtn=findViewById(R.id.weatherBtn);
+
         ConstraintLayout checkOut=findViewById(R.id.CheckOut);
 
 
@@ -52,6 +55,21 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(CartActivity.this,DeliveryActivity.class));
+            }
+        });
+
+        profilBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CartActivity.this,UserProfileActivity.class));
+            }
+        });
+
+
+        weatherBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CartActivity.this,WeatherActivity.class));
             }
         });
 

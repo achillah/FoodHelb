@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView_update_email_head"
                 android:layout_marginTop="30dp"
-                android:text="You can Update your email adress now. Please enter your password and verify before continuig!"
+                android:text="@string/youCanUpdateYourEmailAdressNow"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
 
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView_update_email"
                 android:layout_below="@id/textView_update_email_head"
-                android:text="Current Email"
+                android:text="@string/currentEmail"
                 android:layout_marginTop="50dp"
                 android:padding="6dp"
                 android:textColor="#555555"
@@ -47,6 +47,7 @@
                 android:id="@+id/textView_update_email_old"
                 android:layout_below="@id/textView_update_email"
                 android:background="@drawable/border"
+                android:text="@string/enterEmail"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -57,7 +58,7 @@
                 android:id="@+id/textView_update_email_verify_password"
                 android:layout_below="@id/textView_update_email_old"
                 android:layout_marginTop="20dp"
-                android:text="Password"
+                android:text="@string/password2"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -67,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editText_update_email_verify_password"
                 android:layout_below="@id/textView_update_email_verify_password"
-                android:hint="Enter Your Password"
+                android:hint="@string/enterYourPassword"
                 android:inputType="textPassword"
                 android:padding="6dp"
                 android:textSize="16sp"
@@ -79,7 +80,7 @@
                 android:id="@+id/button_authenticate_user"
                 android:layout_below="@id/editText_update_email_verify_password"
                 android:layout_marginTop="10dp"
-                android:text="Authenticate"
+                android:text="@string/authenticate"
                 android:layout_marginRight="70dp"
                 android:layout_marginLeft="70dp"/>
 
@@ -108,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView_update_email_authenticated"
                 android:layout_marginTop="30dp"
-                android:text="Your profile is not authenticated/verified yet!!"
+                android:text="@string/yourProfileIsNot"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -119,7 +120,7 @@
                 android:id="@+id/textView_update_email_new"
                 android:layout_below="@id/textView_update_email_authenticated"
                 android:layout_marginTop="30dp"
-                android:text="New Email*"
+                android:text="@string/newEmail"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -129,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editText_update_email_new"
                 android:layout_below="@id/textView_update_email_new"
-                android:hint="Enter Your new Email"
+                android:hint="@string/enterYourNewEmail"
                 android:inputType="textEmailAddress"
                 android:padding="6dp"
                 android:textSize="16sp"
@@ -141,7 +142,7 @@
                 android:id="@+id/button_update_email"
                 android:layout_below="@id/editText_update_email_new"
                 android:layout_marginTop="10dp"
-                android:text="Update Email"
+                android:text="@string/updateEmail"
                 android:layout_marginRight="70dp"
                 android:layout_marginLeft="70dp"/>
 

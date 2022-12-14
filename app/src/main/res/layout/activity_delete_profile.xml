@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView_delete_user_head"
                 android:layout_marginTop="30dp"
-                android:text="You can delete you profile now. Please enter your password and verify before continuig!"
+                android:text="@string/youCanDeleteYourProfileNow"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
 
@@ -37,7 +37,7 @@
                 android:id="@+id/textView_delete_user_pwd"
                 android:layout_below="@id/textView_delete_user_head"
                 android:layout_marginTop="20dp"
-                android:text="Password"
+                android:text="@string/password"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editText_delete_user_pwd"
                 android:layout_below="@id/textView_delete_user_pwd"
-                android:hint="Enter Your Password"
+                android:hint="@string/enterYourPassword"
                 android:inputType="textPassword"
                 android:padding="6dp"
                 android:textSize="16sp"
@@ -59,7 +59,7 @@
                 android:id="@+id/button_delete_user_authenticate"
                 android:layout_below="@id/editText_delete_user_pwd"
                 android:layout_marginTop="10dp"
-                android:text="Authenticate"
+                android:text="@string/authenticate"
                 android:layout_marginRight="70dp"
                 android:layout_marginLeft="70dp"/>
 
@@ -87,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView_delete_user_authenticated"
                 android:layout_marginTop="30dp"
-                android:text="Your profile is not authenticated/verified yet!!"
+                android:text="@string/yourProfileIsNot"
                 android:padding="6dp"
                 android:textColor="#555555"
                 android:textSize="16sp"/>
@@ -99,7 +99,7 @@
                 android:id="@+id/button_delete_user"
                 android:layout_below="@id/textView_delete_user_authenticated"
                 android:layout_marginTop="30dp"
-                android:text="Delete User"
+                android:text="@string/deleteUser"
                 android:layout_marginRight="70dp"
                 android:layout_marginLeft="70dp"/>
 

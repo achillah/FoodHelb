@@ -39,7 +39,7 @@
         android:drawableLeft="@drawable/ic_security"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPersonName|textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -61,7 +61,7 @@
         android:drawableLeft="@drawable/ic_mail"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Mail"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -79,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Forgot Password ?"
+        android:text="@string/forgotPassword"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -91,12 +91,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Login"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/editText_login_pwd"
         app:layout_constraintStart_toStartOf="@+id/editText_login_pwd"
         app:layout_constraintTop_toBottomOf="@+id/editText_login_pwd" />
-
-
 
 
     <LinearLayout
@@ -114,14 +112,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an Accout ?"
+            android:text="@string/dontHaveAnAccount"
             android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/TvSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Sign Up" />
+            android:text="@string/signUp" />
 
     </LinearLayout>
 

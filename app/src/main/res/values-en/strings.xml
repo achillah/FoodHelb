@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FoodHelb</string>
 
@@ -68,21 +69,16 @@
     <string name="enterYourNewPwd">Enter Your New Password</string>
     <string name="confirmPwd">Confirm Password*</string>
     <string name="confirmYourNewPwd">Confirm Your New Password</string>
-
+    <string name="changePwd">CHANGE PASSWORD</string>
+    <string name="youCanUpdateYourEmailAdressNow">You can Update your email adress now. Please enter your password and verify before continuie!</string>
+    <string name="youCanChangeYourPassword">You can change your password now. Please enter your password and verify before continuie!</string>
+    <string name="changeLanguage">Change Language</string>
     <string name="checkOut">Check Out</string>
     <string name="total">Total: </string>
     <string name="tax">Tax: </string>
     <string name="deliveryService">Delivery Services: </string>
     <string name="itemsTotal">Items Total: </string>
     <string name="myCart">My Cart</string>
-    <string name="changePwd">CHANGE PASSWORD</string>
-
-
-
-    <string name="youCanUpdateYourEmailAdressNow">You can Update your email adress now. Please enter your password and verify before continuie!</string>
-    <string name="youCanChangeYourPassword">You can change your password now. Please enter your password and verify before continuie!</string>
-    <string name="changeLanguage">Change Language</string>
-
     <string name="youCanDeleteYourProfileNow">You can delete you profile now. Please enter your password and verify before continue!</string>
     <string name="authenticate">AUTHENTICATE</string>
     <string name="deleteUser">DELETE USER</string>
@@ -102,4 +98,5 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

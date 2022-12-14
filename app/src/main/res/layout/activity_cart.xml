@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:paddingStart="16dp"
-                android:text="My Cart"
+                android:text="@string/myCart"
                 android:textAlignment="viewStart"
                 android:textColor="#ff3d00"
                 android:textSize="20sp"
@@ -60,7 +60,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Items Total: "
+                        android:text="@string/itemsTotal"
                         android:textColor="#373b54"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -89,7 +89,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Delivery Services :"
+                        android:text="@string/deliveryService"
                         android:textColor="#373b54"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -118,7 +118,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Tax :"
+                        android:text="@string/tax"
                         android:textColor="#373b54"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -156,7 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Total: "
+                        android:text="@string/total"
                         android:textColor="#373b54"
                         android:textSize="30sp"
                         android:textStyle="bold" />
@@ -183,7 +183,7 @@
                     android:id="@+id/textView18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Check Out"
+                    android:text="@string/checkOut"
                     android:textColor="#ffffff"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -258,6 +258,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
+                    android:id="@+id/profileBtn"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
@@ -329,6 +330,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/weatherBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -339,13 +341,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/bottom_btn4" />
+                        android:src="@drawable/ic_cloud" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Settings"
+                        android:text="@string/weather"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />

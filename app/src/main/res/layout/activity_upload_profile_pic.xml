@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView_upload_pic_head"
-            android:text="Upload your profile pic"
+            android:text="@string/uploadYourProfilePic"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
 
@@ -27,7 +27,7 @@
             android:id="@+id/upload_pic_choose_button"
             android:layout_below="@id/textView_upload_pic_head"
             android:layout_marginTop="20dp"
-            android:text="Choose Picture"
+            android:text="@string/choosePicture"
             android:layout_marginRight="70dp"
             android:layout_marginLeft="70dp"
             android:backgroundTint="@color/teal_200"/>
@@ -48,7 +48,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
-            android:text="Upload"/>
+            android:text="@string/upload"/>
 
         <ProgressBar
             android:layout_width="wrap_content"

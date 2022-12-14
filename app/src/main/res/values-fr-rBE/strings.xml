@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FoodHelb</string>
+
+    <string name="slogan">Avec FoodHelb !, mangez mieux, même au Helb</string>
+    <string name="register">S\'inscrire</string>
+    <string name="signUp">S\'inscrire</string>
+    <string name="dontHaveAnAccount">Vous n\'avez pas de compte ?</string>
+
+    <string name="login">Connexion</string>
+    <string name="fullName">Nom complet*</string>
+    <string name="enterFullName">Entrez votre nom complet</string>
+    <string name="mail">Mail</string>
+    <string name="forgotPassword">Mot de passe oublié ?</string>
+    <string name="password2">Mot de passe</string>
+
+    <string name="email">Mail*</string>
+    <string name="enterEmail">Entrez votre mail</string>
+    <string name="birthday">Date de naissance*</string>
+    <string name="selectYourDOB">Selectionnez votre Date</string>
+    <string name="gender">Genre*</string>
+    <string name="female">Féminin</string>
+    <string name="male">Masculin</string>
+    <string name="mobile">GSM*</string>
+    <string name="enterYourMobile">Entrez Votre Numéro</string>
+    <string name="password">Mot de passe*</string>
+    <string name="enterYourPassword">Entrez votre mot de passe</string>
+    <string name="confirmPassword">Confirmez votre mot de passe*</string>
+    <string name="confirmYourPassword">Confirmez votre mot de passe</string>
+
+    <string name="searchAndOrder">Chercher et Commander</string>
+    <string name="orderNow">Commander maintenant</string>
+    <string name="searchYourFavouriteFood">Cherchez Votre Plat Préféré</string>
+    <string name="seeMoer">Voir Plus</string>
+    <string name="upTo50Off">Jusqu\'à 50 % de réduction</string>
+    <string name="Dec15Jan12">Dec 15 - Jan 12</string>
+    <string name="categories">Catégories</string>
+    <string name="recommended">Recommendé</string>
+    <string name="home">Accueil</string>
+    <string name="profil">Profil</string>
+    <string name="cart">Carte</string>
+    <string name="map">Plan</string>
+    <string name="weather">Météo</string>
+    <string name="wantToSearchForNewCity">Chercher une nouvelle ville</string>
+    <string name="enterCityName">Entrez le nom de la ville</string>
+
+    <string name="deliveryText">Votre commande a été envoyée et sera traitée dans les meilleurs délais.</string>
+
+    <string name="uploadYourProfilePic">Chargez votre photo de profil</string>
+    <string name="choosePicture">CHOISIR UNE IMAGE</string>
+    <string name="upload">TÉLÉCHARGER</string>
+    <string name="title">Titre</string>
+
+    <string name="youCanUpdateYourProfile">Vous pouvez mettre à jour les détails de votre profil ici !</string>
+    <string name="name">Nom*</string>
+    <string name="updateProfilePic">METTRE À JOUR LA PHOTO DE PROFIL</string>
+    <string name="updateEmail">METTRE À JOUR DE L\'E-MAIL</string>
+    <string name="updateProfile">METTRE À JOUR LE PROFILE</string>
+    <string name="addToCard">Ajouter à la Carte</string>
+    <string name="totalPrice">Prix total</string>
+    <string name="currentEmail">Mail Actuelle</string>
+    <string name="enterYourEmail">Entrez votre mail</string>
+    <string name="newEmail">Nouveau Mail*</string>
+    <string name="enterYourNewEmail">Entrez Votre Nouveau Mail</string>
+    <string name="currentPwd">Mot de passe actuel</string>
+    <string name="newPwd">Nouveau Mot de passe*</string>
+    <string name="enterYourNewPwd">Entrez Votre Nouveau Mot de passe</string>
+    <string name="confirmPwd">Confirmez le Mot de passe*</string>
+    <string name="confirmYourNewPwd">Confirmez Votre Nouveau Mot de passe</string>
+    <string name="changePwd">CHANGER le Mot de passe</string>
+    <string name="youCanUpdateYourEmailAdressNow">Vous pouvez mettre à jour votre adresse e-mail maintenant. Veuillez entrer votre mot de passe et vérifier avant de continuer !</string>
+    <string name="youCanChangeYourPassword">Vous pouvez changer votre mot de passe maintenant. Veuillez entrer votre mot de passe et vérifier avant de continuer !</string>
+    <string name="changeLanguage">Changer la Langue</string>
+
+    <string name="youCanDeleteYourProfileNow">You can delete you profile now. Please enter your password and verify before continue!</string>
+    <string name="authenticate">AUTHENTIFIER</string>
+    <string name="deleteUser">SUPPRIMER l\'Utilisateur</string>
+    <string name="yourProfileIsNot">Votre profil n\'est pas encore authentifié/vérifié !!</string>
+    <string name="chooseLanguage">Choisir langue</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="title"
+        android:text="@string/title"
         android:textColor="#373b54"
         android:textSize="18sp"
         android:textStyle="bold"

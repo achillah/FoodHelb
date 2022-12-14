@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView_update_profile_head"
             android:layout_marginTop="30dp"
-            android:text="You can update your profile details here!"
+            android:text="@string/youCanUpdateYourProfile"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView_update_profile_name"
             android:layout_below="@id/textView_update_profile_head"
-            android:text="Name"
+            android:text="@string/name"
             android:layout_marginTop="30dp"
             android:padding="6dp"
             android:textSize="16sp"
@@ -42,7 +42,7 @@
             android:inputType="textPersonName"
             android:padding="6dp"
             android:textSize="16sp"
-            android:hint="Enter full name"/>
+            android:hint="@string/enterFullName"/>
 
         <!-- Update DoB-->
         <TextView
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView_update_profile_dob"
             android:layout_below="@id/editText_update_profile_name"
-            android:text="DoB"
+            android:text="@string/birthday"
             android:layout_marginTop="10dp"
             android:padding="6dp"
             android:textSize="16sp"
@@ -66,7 +66,7 @@
             android:focusable="false"
             android:padding="6dp"
             android:textSize="16sp"
-            android:hint="Select your date of birth"/>
+            android:hint="@string/selectYourDOB"/>
 
         <!-- Update Gender-->
         <TextView
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView_update_profile_gender"
             android:layout_below="@id/editText_update_profile_dob"
-            android:text="Gender"
+            android:text="@string/gender"
             android:layout_marginTop="10dp"
             android:padding="6dp"
             android:textSize="16sp"
@@ -91,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio_female"
-                android:text="Female"
+                android:text="@string/female"
                 android:textSize="16sp"
                 android:textColor="#666666"/>
 
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radio_male"
-                android:text="Male"
+                android:text="@string/male"
                 android:textSize="16sp"
                 android:textColor="#666666"/>
             
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView_update_profile_mobile"
             android:layout_below="@id/radio_group_update_gender"
-            android:text="Mobile"
+            android:text="@string/mobile"
             android:layout_marginTop="10dp"
             android:padding="6dp"
             android:textSize="16sp"
@@ -126,13 +126,13 @@
             android:inputType="phone"
             android:padding="6dp"
             android:textSize="16sp"
-            android:hint="Enter Your Mobile"/>
+            android:hint="@string/enterYourMobile"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button_upload_profile_pic"
-            android:text="Upload profile pic"
+            android:text="@string/updateProfilePic"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
@@ -143,7 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button_profile_update_email"
-            android:text="Update Email"
+            android:text="@string/updateEmail"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:layout_below="@id/button_upload_profile_pic"
@@ -153,7 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button_profile_update"
-            android:text="Update Profile"
+            android:text="@string/updateProfile"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:layout_below="@id/button_profile_update_email"/>
