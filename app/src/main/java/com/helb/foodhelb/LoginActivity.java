@@ -4,12 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
 
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SharedMemory;
 import android.text.TextUtils;
@@ -39,9 +46,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        //change actionbar title
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
 
         getSupportActionBar().setTitle("Login");
 
@@ -93,6 +97,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
+
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                    NotificationChannel channel = new NotificationChannel("FoodHelb Notification", "FoodHelb Notification", NotificationManager.IMPORTANCE_DEFAULT);
+                    NotificationManager manager = getSystemService(NotificationManager.class);
+                    manager.createNotificationChannel(channel);
+                }
+
                 if(task.isSuccessful()){
                     Toast.makeText(LoginActivity.this, "You are logged in now", Toast.LENGTH_SHORT).show();
 
@@ -101,6 +112,20 @@ public class LoginActivity extends AppCompatActivity {
 
                     startActivity(intent);
                     finish();
+
+                    //Notification code goes here
+
+
+                    String message = "Welcome to our Application. Enjoy your meal !";
+
+                    NotificationCompat.Builder builder = new NotificationCompat.Builder(LoginActivity.this, "FoodHelb Notification");
+                    builder.setContentTitle("Notification FoodHelb");
+                    builder.setContentText(message);
+                    builder.setSmallIcon(R.drawable.ic_message);
+                    builder.setAutoCancel(true);
+
+                    NotificationManagerCompat managerCompat = NotificationManagerCompat.from(LoginActivity.this);
+                    managerCompat.notify(1,builder.build());
 
 
                 } else {
@@ -112,5 +137,23 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    //check if user is already logged in.
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(authProfile.getCurrentUser() != null){
+            //Toast.makeText(LoginActivity.this, "Already logged in!", Toast.LENGTH_SHORT).show();
+
+            //Start the HomeActivity
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            finish(); //Close Login
+
+        }
+        else {
+           // Toast.makeText(LoginActivity.this, "You can login now!", Toast.LENGTH_SHORT).show();
+
+        }
     }
 }

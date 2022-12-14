@@ -54,6 +54,8 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
+        getSupportActionBar().setTitle("Weather");
+
         weatherState = findViewById(R.id.weatherCondition);
         Temperature = findViewById(R.id.temperature);
         mweatherIcon = findViewById(R.id.weatherIcon);

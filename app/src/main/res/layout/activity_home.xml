@@ -61,12 +61,12 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
+               <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="@string/searchAndOrder"
+                    android:text=""
                     android:textColor="#000000"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="@id/textView"
@@ -79,7 +79,7 @@
                     app:layout_constraintBottom_toBottomOf="@+id/textView3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView"
-                    app:srcCompat="@drawable/profile" />
+                     />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"

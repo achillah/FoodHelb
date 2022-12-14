@@ -23,4 +23,8 @@
     <style name="Theme.FoodEat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.FoodEat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.FoodHelb.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FoodHelb.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

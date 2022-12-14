@@ -1,6 +1,11 @@
 package com.helb.foodhelb;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -9,6 +14,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,10 +32,12 @@ public class CartActivity extends AppCompatActivity {
     private double tax;
     private ScrollView scrollView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+        getSupportActionBar().setTitle("My Cart");
 
         managementCart= new ManagementCart(this);
         
@@ -55,6 +64,28 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(CartActivity.this,DeliveryActivity.class));
+                /*NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                        CartActivity.this
+                )
+                        .setSmallIcon(R.drawable.ic_message)
+                        .setContentTitle("Notification FoodHelb")
+                        .setContentText(message)
+                        .setAutoCancel(true);
+
+                Intent intent = new Intent(CartActivity.this, DeliveryActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("message", message);
+                PendingIntent pendingIntent = PendingIntent.getActivity(CartActivity.this,
+                        0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+
+                NotificationManager notificationManager = (NotificationManager)getSystemService(
+                        Context.NOTIFICATION_SERVICE
+                );
+                notificationManager.notify(0, builder.build());*/
+
+
+
             }
         });
 

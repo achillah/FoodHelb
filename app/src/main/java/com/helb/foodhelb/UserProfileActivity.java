@@ -1,6 +1,7 @@
 package com.helb.foodhelb;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +21,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 public class UserProfileActivity extends AppCompatActivity {
 
@@ -93,13 +95,21 @@ public class UserProfileActivity extends AppCompatActivity {
                     textViewGender.setText(gender);
                     textViewMobile.setText(mobile);
 
+                    //Set User DP (After user has uploaded)
+                    Uri uri = firebaseUser.getPhotoUrl();
+
+                    //ImageViewer setImageURI() should not be used with regular URIs. So, we are using picasso
+                    Picasso.with(UserProfileActivity.this).load(uri).into(imageView);
+                }else {
+                    Toast.makeText(UserProfileActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+
                 }
                 progressBar.setVisibility(View.GONE);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UserProfileActivity.this, "il y a une erreur", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserProfileActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
                 progressBar.setVisibility(View.GONE);
             }
         });

@@ -213,12 +213,12 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
 
-                  /*  //Open User Profile after successful registration
-                    Intent intent = new Intent(RegisterActivity.this, UserProfileActivity.class);
+                    //Open User Profile after successful registration
+                    Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
                     startActivity(intent);
-                    finish();*/
+                    finish();
 
                             }else {
                                 Toast.makeText(RegisterActivity.this, "User registered failed", Toast.LENGTH_SHORT).show();

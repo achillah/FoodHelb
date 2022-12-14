@@ -38,6 +38,7 @@ public class MapActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        getSupportActionBar().setTitle("Google Maps");
 
      /*   Fragment fragment = new MapFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
