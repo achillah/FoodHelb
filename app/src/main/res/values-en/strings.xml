@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FoodHelb</string>
+    <string name="app_name">FoodApp</string>
 
-    <string name="slogan">With FoodHelb! eat better, even at the Helb</string>
+    <string name="slogan">With FoodApp! eat better, even at the Helb</string>
     <string name="register">Register</string>
     <string name="signUp">Sign Up</string>
     <string name="dontHaveAnAccount">Don\'t Have An Account ?  </string>
